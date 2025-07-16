@@ -62,6 +62,70 @@
 // }
 
 
+// 6. Ask the user to enter two numbers. Check which one is larger and alert: "First is
+// larger" or "Second is larger".
+
+
+// var num1 = prompt("enter first number");
+// var num2 = prompt("enter second number");
+
+// if (num1 > num2 ) {
+//     alert("First is larger")
+// } else {
+//     alert("second is larger")
+// }
+
+
+
+// 7. Ask for a number. If it's greater than 100, alert "Too big!", else alert "Within
+// range".
+
+
+// var num = prompt("enter a number");
+
+// if (num > 100) {
+//     alert("Too big!")
+// }else {
+//     alert("Within range")
+// }
+
+
+// 8. Ask for a score. If it’s 50 or higher, log "You passed!", else log "You failed."
+
+// var score = prompt("enter your score");
+
+// if (score >= 50) {
+//     console.log("You passed!");
+    
+// } else {
+//     console.log("You failed");
+    
+// }
+
+
+// 9. Ask the user to enter a temperature. If it’s over 30, alert "It's hot!"; else alert "It's
+// not hot."
+
+// var temp = prompt("enter temperature");
+
+// if (temp > 30 ) {
+//     alert("It's hot!");
+// }else{
+//     alert("It's not hot")
+// }
+
+
+// 10. Ask the user to enter a number. If it's 0, alert "Zero"; if it’s not zero, alert "Not zero".
+
+// var num = prompt("enter a number");
+
+// if (num == 0) {
+//     alert("Zero");
+// } if (num != 0) {
+//     alert("Not Zero");
+// }
+
+
 
 
 
