@@ -177,7 +177,7 @@
 
 // for (let i = 0; i < names.length; i++) {
 //     console.log(names[i]);
-//     result.innerHTML += `<div>${names[i]},</div>`
+//     result.innerHTML = `<div>${names},</div>`
 // }
 
 
@@ -279,7 +279,7 @@
 // let para = document.querySelector("#animals");
 
 // for (let i = 0; i < animals.length; i++) {
-//     para.innerHTML += `<p>${animals[i]}</p>`
+//     para.innerHTML = `<p>${animals}</p>`
 // }
 
 
@@ -329,5 +329,125 @@
 // var para = document.querySelector("#subjectList");
 
 // for (let i = 0; i < subjects.length; i++) {
-//     para.innerHTML += `<p>${subjects[i]}</p>`
+//     para.innerHTML = `<p>${subjects}</p>`
 // }
+
+
+// 20. Write a loop that prints numbers from 10 down to 1 and shows the result inside a Given
+// an array of numbers [5, 10, 15, 20], use a loop to calculate and print the sum of all
+// elements.
+
+// let div = document.querySelector("#result");
+
+// for (let i = 10; i >= 1; i--) {
+//     console.log(i);
+//     div.innerHTML += `<div>${i}</div>`
+// }
+
+// var number = [5, 10, 15, 20];
+// var sum = 0;
+// var total = document.querySelector("#sum");
+
+// for (let i = 0; i < number.length; i++) {
+//     sum += number[i];
+//     total.innerHTML = `<p>The sum of all elements of array is, ${sum}</p>`
+    
+// }
+
+
+// 21. Create a loop that finds the largest number in an array [45, 67, 12, 89, 34].
+
+// let arr = [45, 67, 12, 89, 34];
+// let largest = arr[0];
+
+// for (let i = 0; i < arr.length; i++) {
+//    if (arr[i] > largest) {
+//       largest = arr[i];
+//    } 
+// }
+// console.log("The largest number of array is," , largest);
+
+
+// 22. Use a loop to count how many numbers in an array [3, 8, 6, 1, 9, 2] are even.
+
+// var number = [3, 8, 6, 1, 9, 2];
+// var count = 0;
+
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 2 === 0) {
+//         count++;
+//     }  
+// }
+// console.log("The even numbers of array are,", count);
+
+
+// 23. Write a loop that calculates the average of numbers in an array [20, 30, 40, 50].
+
+// let arr = [20, 30, 40, 50];
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+// var average = sum / arr.length;
+// console.log(average);
+
+
+// 24. Given an array [2, 4, 6, 8, 10], use a loop to create a new array where each value is
+// multiplied by 3.
+
+// let arr = [2, 4, 6, 8, 10];
+// let newArr = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     newArr.push(arr[i] * 3);   
+// }
+// console.log(newArr);
+
+
+// 25. Loop through an array [1, 3, 5, 7, 9] and count how many elements are greater than 4.
+
+// var array = [1, 3, 5, 7, 9];
+// var count = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 4) {
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+// 26. Given an array [10, 15, 20, 25, 30], use a loop to add only the numbers divisible by 5.
+
+// let number = [10, 15, 20, 25, 30];
+// let sum = 0;
+
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] % 5 === 0) {
+//         sum += number[i]
+//     } 
+// }
+// console.log(sum);
+
+
+// 27. Write a loop that checks if a number 25 exists in the array [10, 20, 30, 40, 25].
+
+// let array = [10, 20, 30, 40, 25];
+// let checksNumber = 25;
+// let found = false;
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] === checksNumber) {
+//         found = true
+//         break;
+//     }
+// }
+// if (found) {
+//     console.log(checksNumber + " Exists");
+// } else{
+//     console.log(checksNumber + " Not exists");
+    
+// }
+
+
