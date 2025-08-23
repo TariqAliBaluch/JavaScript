@@ -434,7 +434,7 @@
 // 27. Write a loop that checks if a number 25 exists in the array [10, 20, 30, 40, 25].
 
 // let array = [10, 20, 30, 40, 25];
-// let checksNumber = 25;
+// let checksNumber = 40;
 // let found = false;
 
 // for (let i = 0; i < array.length; i++) {
@@ -451,3 +451,207 @@
 // }
 
 
+// 28. Given two arrays [1, 2, 3] and [4, 5, 6], use a loop to create a third array containing the
+// sum of corresponding elements.
+
+// var x = [1, 2, 3];
+// var y = [4, 5, 6];
+// var xy = [];
+
+// for (let i = 0; i < x.length; i++) {
+//     xy.push(x[i] + y[i]); 
+// }
+// console.log(xy);
+
+
+// 29. Use a loop to find the second-largest number in an array [10, 99, 23, 87, 56].
+
+// let arr = [10, 99, 23, 87, 56];
+// let largest = [0];
+// let secondLargest = arr[0];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//         secondLargest = largest
+//         largest = arr[i]
+//     }else if (arr[i] > secondLargest && arr[i] !== largest) {
+//         secondLargest = arr[i];
+//     }
+// }
+// console.log(secondLargest);
+
+
+// 30. Given an array [1, 2, 3, 4, 5], reverse the array manually using a loop (don’t use
+// .reverse()).
+
+// const arr = [1, 2, 3, 4, 5];
+// const reversedArr = [];
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     reversedArr.push(arr[i]);
+// }
+// console.log(reversedArr);
+
+
+// 31. Write a loop that finds and prints all the prime numbers between 1 and 50.
+
+// var A = 50;
+// var prime = []
+
+// for (let num = 2; num <= A; num++) {
+//     let isPrime = true;
+    
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//        isPrime = false
+//        break
+//     }
+//   }
+//   if (isPrime) {
+//     prime.push(num)
+//   }
+// }
+// console.log(prime);
+
+
+// 32. Create a loop that finds the difference between the largest and smallest numbers in an
+// array [11, 4, 99, 2, 47].
+
+// let arr = [11, 4, 99, 2, 47];
+// let largest = arr[0];
+// let smallest = arr[0];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//         largest = arr[i]
+//     }
+//     if (arr[i] < smallest) {
+//         smallest = arr[i]
+//     }
+// }
+// let difference = largest - smallest
+
+// console.log(largest);
+// console.log(smallest);
+// console.log(difference);
+
+
+// 33. Given an array [0, -1, -5, 6, 8, -3], count how many negative numbers are in the array.
+
+// var arr = [0, -1, -5, 6, 8, -3];
+// var count = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+// 34. Loop through an array of numbers and create a new array that only contains odd
+// numbers.
+
+// var arr = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13 , 14 , 15];
+// var newArr = [];
+
+// for (let i = 0; i < arr.length ; i++) {
+//     if (arr[i] % 2 !== 0) {
+//         newArr.push(arr[i]);
+//     }
+// }
+// console.log(newArr);
+
+
+// 35. Use a loop to remove all zeroes from an array [0, 1, 0, 3, 0, 5] and store the non-zero
+// elements in a new array.
+
+// let numbers = [0, 1, 0, 3, 0, 5];
+// let newArr = [];
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] !== 0) {
+//         newArr.push(numbers[i])
+//     }
+// }
+// console.log(newArr);
+
+
+// 36. Given an array [1, 2, 3, 4, 5, 6], use a loop to swap the first and last elements.
+
+// let number = [1, 2, 3, 4, 5, 6];
+
+// for (let i = 0; i < number.length; i++) {
+//     if (i === 0) {
+//         var lastElement = number.length - 1
+
+//         let swap = number[i];
+//         number[i] = number[lastElement];
+//         number[lastElement] = swap;
+
+//         break;
+//     }
+// }
+// console.log(number);
+
+
+// 37. Write a loop that checks whether all numbers in an array [2, 4, 6, 8] are even.
+
+// let arr = [2, 4, 6, 8];
+// let allEven = true
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//         allEven = false
+        
+//         break
+//     }    
+// }
+//  if (allEven) {
+//         console.log("All elements are even");
+//     } else {
+//         console.log("All elements are not even");   
+//     }
+
+
+// 38. Create a loop that counts how many numbers in [5, 10, 15, 20, 25] are greater than or
+// equal to the average of the array.
+
+// var number = [5, 10, 15, 20, 25];
+// var sum = 0;
+
+// for (let i = 0; i < number.length; i++) {
+//     sum += number[i]
+// }
+// // console.log(sum);
+
+// let average = sum / number.length;
+// // console.log(average);
+
+// let count = 0;
+// for (let i = 0; i < number.length; i++) {
+//     if (number[i] >= average) {
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+// 39. Given an array [2, 2, 2, 2, 2], use a loop to check whether all elements are equal.
+
+let arr = [2, 2, 2, 2, 2];
+let allEqual = true
+let number = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== number) {
+        allEqual = false
+        break
+    }
+    
+}
+if (allEqual) {
+    console.log("All elements are equal");
+} else{
+    console.log("All elements are not equal");
+}
