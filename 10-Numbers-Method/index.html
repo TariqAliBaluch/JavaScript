@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+    <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: black;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(133, 125, 125, 0.2);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 60px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    h1 span {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      border-radius: 10px;
+      min-width: 60px;
+      display: inline-block;
+    }
+
+    #btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <!-- <h1>Hello Number Methods</h1>
+
+    <button onclick="check(1)">Head</button>
+    <button onclick="check(2)">Tail</button>
+
+    <h3 id="result"></h3> -->
+
+
+
+    <div class="container">
+        <h1><span id="hour">00</span> : <span id="min">00</span> : <span id="sec">00</span></h1>
+
+        <div id="btns">
+            <button onclick="startWatch()">Start</button>
+            <button onclick="stopInterval()">Stop</button>
+            <button onclick="resetWatch()">Reset</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
